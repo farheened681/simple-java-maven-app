@@ -15,15 +15,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  <repositories>
-    <repository>
-      <id>maven-group</id>
-      <url>http://localhost:8081/repository/maven-group/</url>
-    </repository>
-  </repositories>
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
@@ -34,6 +25,15 @@
       <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-group/</url>
+    </repository>
+  </repositories>
 </project>
   <build>
     <pluginManagement>
